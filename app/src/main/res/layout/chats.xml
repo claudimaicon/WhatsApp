@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <!--<FrameLayout-->
+        <!--android:background="@color/header_color"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1">-->
+
+        <!--</FrameLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="11">
+
+                <ListView
+                    android:id="@+id/lvtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#000000"
+                    android:divider="@drawable/list_divider"
+                    android:dividerHeight="0.5dp"
+                    android:drawSelectorOnTop="false"
+                    android:footerDividersEnabled="true"
+                    android:headerDividersEnabled="false">
+
+
+                </ListView>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_gravity="bottom|end"
+                    android:clickable="true"
+                    android:src="@drawable/contatos"
+                    app:backgroundTint="#20C659"
+                    app:rippleColor="#FFF"/>
+            </FrameLayout>
+
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_weight="1">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/linearLayout"-->
+                    <!--android:layout_width="match_parent"-->
+
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/enter_message"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.19"-->
+                        <!--android:hint="edit_text" />-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/send_button"-->
+                        <!--android:layout_width="45dp"-->
+                        <!--android:layout_height="30dp"-->
+
+                        <!--android:onClick="sendMessage" />-->
+
+                <!--</LinearLayout>-->
+
+            <!--</FrameLayout>-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

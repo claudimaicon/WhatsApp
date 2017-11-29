@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fundo2whats"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="7dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/layoutBottonBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/fundo_branco"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imgEmoticon"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_margin="7dp"
+                app:srcCompat="@drawable/emoticons"/>
+
+            <EditText
+                android:id="@+id/editTextDigitar"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:hint="Digite aqui..." />
+
+            <ImageView
+                android:id="@+id/imgAttach"
+                android:layout_width="45dp"
+                android:layout_height="40dp" />
+
+            <ImageView
+                android:id="@+id/imgCamera"
+                android:layout_width="45dp"
+                android:layout_height="40dp" />
+
+
+
+        </LinearLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabSend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            app:backgroundTint="#20C659"
+            app:rippleColor="#FFF"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentEnd="true" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
